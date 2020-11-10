@@ -41,4 +41,8 @@ public class DetyreShtepie {
     public static void syprinaKatrorit() {
 
     }
+
+    public static void syprinaDrejtekendeshit() {
+        
+    }
 }
