@@ -1,5 +1,6 @@
 package cacttus.education.com;
 
+
 import java.util.Scanner;
 
 public class Scanner2 {
