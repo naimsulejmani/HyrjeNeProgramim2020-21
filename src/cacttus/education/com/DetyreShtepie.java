@@ -38,7 +38,8 @@ public class DetyreShtepie {
 
 
         System.out.println("E-kuleta EH");
-        eKuletaEH();
+        //eKuletaEH();
+        eKuletaAdvanceMX();
     }
 
     public static void ligjiDyteINjutonit() {
@@ -247,6 +248,55 @@ public class DetyreShtepie {
         System.out.printf (" 2 euro     : %4d  %8.2f %n  ",dyeuro,dyeuro1);
         System.out.println("-----------------------");
         System.out.printf(" Totali      : %12.2f", totali);
+    }
+
+    public static void  eKuletaAdvanceMX () {
+        Scanner reader= new Scanner(System.in);
+
+        System.out.println("Hajde t'shohim sa pare i ki n'kulete!");
+        System.out.println();
+        System.out.print("5 euro: ");
+        int euro5=reader.nextInt();
+        double euro_5= euro5 * 5;
+
+        System.out.print("10 euro: ");
+        int euro10= reader.nextInt();
+        double euro_10 = euro10 * 10;
+
+        System.out.print("20 euro: ");
+        int euro20= reader.nextInt();
+        double euro_20 = euro20 * 20;
+
+        System.out.print("50 euro: ");
+        int euro50= reader.nextInt();
+        double euro_50 = euro50 * 50;
+
+        System.out.print("100 euro: ");
+        int euro100= reader.nextInt();
+        double euro_100 = euro100 * 100;
+
+        System.out.print("200 euro: ");
+        int euro200= reader.nextInt();
+        double euro_200 = euro200 * 200;
+
+        System.out.print("500 euro: ");
+        int euro500= reader.nextInt();
+        double euro_500 = euro500 * 500;
+        double totali = euro_5 + euro_10 + euro_20 + euro_50+ euro_100+ euro_200+ euro_500;
+
+        System.out.println("*****************************************");
+        System.out.printf("5   euro: %d              %9.2f EUR %n",euro5,euro_5);
+        System.out.printf("10  euro: %d              %9.2f EUR %n",euro10,euro_10);
+        System.out.printf("20  euro: %d              %9.2f EUR %n",euro20, euro_20);
+        System.out.printf("50  euro: %d              %9.2f EUR %n",euro50, euro_50);
+        System.out.printf("100 euro: %d              %9.2f EUR %n",euro100, euro_100);
+        System.out.printf("200 euro: %d              %9.2f EUR %n",euro200, euro_200);
+        System.out.printf("500 euro: %d              %9.2f EUR %n",euro500, euro_500);
+        System.out.println("*****************************************");
+        System.out.printf("Totali:                    %.2f EUR  %n", totali);
+        System.out.println("*****************************************");
+        System.out.println("------------Ju Faleminderit!------------");
+
     }
 
 }
