@@ -107,6 +107,44 @@ public class SwitchPrognoza {
         }
     }
 
+    public static void ensarHoxhaPrognozaMeIf() {
+        Scanner reader = new Scanner(System.in);
+        System.out.println("Cila eshte ekipi i pare :");
+        String ekipi1 = reader.nextLine();
+        System.out.println("Cila eshte ekipi i dyte :");
+        String ekipi2 = reader.nextLine();
+        System.out.println("Cila eshte prognoza juaj ;");
+        int prognoza = reader.nextInt();
+        if (prognoza == 1) {
+            System.out.printf("%s fiton ", ekipi1);
+        } else if (prognoza == 2) {
+            System.out.printf("%s fiton", ekipi2);
+        } else if (prognoza == 0) {
+            System.out.printf("barazim");
+        } else {
+            System.out.println("keni gabuar");
+        }
+    }
+
+    public static void artElshaniPrognozaMeIf() {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Zgjedh ekipin vendas ");
+        String ekipi1 = input.next();
+        System.out.print("Zgjedh ekipin musafir ");
+        String ekipi2 = input.next();
+        System.out.println("Shkruaj prognozen: '1, X, 2");
+        int prognoza = input.nextInt();
+        if (prognoza == 0) {
+            System.out.println("Barazim");
+        } else if (prognoza == 1) {
+            System.out.println("Ekipi vendas fiton");
+        } else if (prognoza == 2) {
+            System.out.println("Ekipi musafir fiton");
+        } else {
+            System.out.println("Shko n'lumi");
+        }
+    }
+
     public static void artElshaniPrognoza() {
         Scanner input = new Scanner(System.in);
         System.out.print("Zgjedh ekipin vendas ");
