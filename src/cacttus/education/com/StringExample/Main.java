@@ -1,5 +1,7 @@
 package cacttus.education.com.StringExample;
 
+import java.util.Locale;
+
 public class Main {
     public static void main(String[] args) {
         String name = "Naim Sulejmani"; // literl string
@@ -32,9 +34,48 @@ public class Main {
         System.out.println("concat simple: " + emri + mbiemri);
 
         String teksti = "Neswr do tw bwhet mw mirw!";
-        System.out.println("Teksti pa replace: "+teksti);
-        teksti = teksti.replace('w','ë');
-        System.out.println("Teksti me replace: "+teksti);
-        System.out.println(teksti.replace("më mirë","më keq"));
+        System.out.println("Teksti pa replace: " + teksti);
+        teksti = teksti.replace('w', 'ë');
+        System.out.println("Teksti me replace: " + teksti);
+        System.out.println(teksti.replace("më mirë", "më keq"));
+
+        String vlerat = "1,2,3,100,50";
+        String[] vleratArray = vlerat.split(",");
+        System.out.println(vleratArray[0]);
+        System.out.println(vleratArray[1]);
+        System.out.println(vleratArray[2]);
+        System.out.println(vleratArray[3]);
+        System.out.println(vleratArray[4]);
+//Naim Sulejmani
+        System.out.printf("%nTe teksti %s shkronja i gjendet ne indeksin: %s", name, name.indexOf("i"));
+        System.out.printf("%nTe teksti %s shkronja i e dyte gjendet ne indeksin: %s", name, name.indexOf("i", 3));
+
+        System.out.printf("%nTeksti %s konverto ne shkronja te vogla: %s", name, name.toLowerCase());
+        System.out.printf("%nTeksti %s konverto ne shkronja te medha: %s", name, name.toUpperCase());
+        String x = "Naim";
+        String y = "naim";
+        System.out.println();
+        System.out.println(x.toLowerCase().equals(y.toLowerCase()));
+        System.out.println(x.equalsIgnoreCase(y));
+        String textToTrim = "   O FFILAN     A JE MIRE       ";
+        System.out.printf("Teksti \"%s\" eshte tani \"%s\"", textToTrim, textToTrim.trim());
+
+        int vitiAktual = 2020;
+        String strVitiAktual = String.valueOf(vitiAktual);
+        String strVitiAktual1 = "" + vitiAktual;
+        System.out.println(strVitiAktual);
+        System.out.println(strVitiAktual1);
+        System.out.println(strVitiAktual.repeat(3));
+        System.out.println(name.endsWith("ni"));
+        System.out.println(name.startsWith("Na"));
+        // Naim == naim
+
+//        switch (x.toLowerCase()) {
+//            case "naim": break;
+//            default: break;
+//        }
+
+
     }
 }
+
