@@ -7,7 +7,9 @@ public class DetyratMeString {
 
     public static void main(String[] args) {
         //detyraA();
-        detyraB();
+        //detyraB();
+        //detyraC();
+        detyraD();
     }
 
     public static void detyraA() {
@@ -45,12 +47,40 @@ public class DetyratMeString {
             int endIndex = reader.nextInt();
 
             // tentoni me kthy me ternary operator ?:
-            if (endIndex < startIndex || endIndex >= teksti.length()) {
-                System.out.println("Indeksi i mbarimit nuk eshte brenda vlerave te lejuara!");
-            } else {
-                System.out.println(teksti.substring(startIndex, endIndex));
-            }
+//            if (endIndex < startIndex || endIndex >= teksti.length()) {
+//                System.out.println("Indeksi i mbarimit nuk eshte brenda vlerave te lejuara!");
+//            } else {
+//                System.out.println(teksti.substring(startIndex, endIndex));
+//            }
+
+            System.out.println(
+                    endIndex < startIndex || endIndex >= teksti.length() ?
+                            "Indeksi i mbarimit nuk eshte brenda vlerave te lejuara!" :
+                            teksti.substring(startIndex, endIndex)
+            );
+
         }
+    }
+
+    public static void detyraD() {
+        System.out.println("Shkruj tekstin");
+        String teksti = reader.nextLine();
+        System.out.println("Shkruani tekstin qe po kerkoni:");
+        String searchText = reader.nextLine();
+
+        //shiko per indeksin se ku fillon teksi i kerkuar ne tekstin e dhene
+        int searchIndex = teksti.indexOf(searchText); // nese ka vlere >=0 atehere teksti gjendet brenda tekstit te dhene, perndryshe jo
+       // int searchIndex1 = teksti.toLowerCase().indexOf(searchText.toLowerCase());
+       // int searchIndex2 = teksti.toUpperCase().indexOf(searchText.toUpperCase());
+        //kerkimi eshte case sensitive
+
+        if (searchIndex >= 0) {
+            System.out.printf("Teksi \"%s\" gjendet ne tekstin e dhene \"%s\".%nIndeksi i paraqitjes se pare fillon me: %d", searchText, teksti, searchIndex);
+        } else {
+            System.out.printf("Teksi \"%s\" nuk gjendet ne tekstin e dhene \"%s\"", searchText, teksti);
+        }
+
+
     }
 
 
