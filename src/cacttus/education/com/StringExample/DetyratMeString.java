@@ -9,7 +9,8 @@ public class DetyratMeString {
         //detyraA();
         //detyraB();
         //detyraC();
-        detyraD();
+        //detyraD();
+        detyraE();
     }
 
     public static void detyraA() {
@@ -70,17 +71,31 @@ public class DetyratMeString {
 
         //shiko per indeksin se ku fillon teksi i kerkuar ne tekstin e dhene
         int searchIndex = teksti.indexOf(searchText); // nese ka vlere >=0 atehere teksti gjendet brenda tekstit te dhene, perndryshe jo
-       // int searchIndex1 = teksti.toLowerCase().indexOf(searchText.toLowerCase());
-       // int searchIndex2 = teksti.toUpperCase().indexOf(searchText.toUpperCase());
+        // int searchIndex1 = teksti.toLowerCase().indexOf(searchText.toLowerCase());
+        // int searchIndex2 = teksti.toUpperCase().indexOf(searchText.toUpperCase());
         //kerkimi eshte case sensitive
 
         if (searchIndex >= 0) {
-            System.out.printf("Teksi \"%s\" gjendet ne tekstin e dhene \"%s\".%nIndeksi i paraqitjes se pare fillon me: %d", searchText, teksti, searchIndex);
+            System.out.printf("Teksi \"%s\" gjendet ne tekstin e dhene \"%s\".%nIndeksi i paraqitjes se pare fillon me: %d",
+                    searchText, teksti, searchIndex);
         } else {
             System.out.printf("Teksi \"%s\" nuk gjendet ne tekstin e dhene \"%s\"", searchText, teksti);
         }
+    }
 
+    public static void detyraE() {
+        System.out.println("Shkruj tekstin");
+        String teksti = reader.nextLine();
+        System.out.println("Shkruani tekstin qe po kerkoni te zavendesoni:");
+        String searchText = reader.nextLine();
+        System.out.println("Shkruani tekstin zevendesues: ");
+        String replaceText = reader.nextLine();
 
+        if (teksti.contains(searchText)) {
+            System.out.println("Teksti i zevendesuar: " + teksti.replace(searchText, replaceText));
+        } else {
+            System.out.println("Fjala e kerkuar nuk gjendet ne tekstin e dhene, me cka nuk ka ndryshime!!!");
+        }
     }
 
 
