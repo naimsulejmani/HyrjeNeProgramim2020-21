@@ -22,15 +22,17 @@ public class PrimeNumbers {
                 //nese mbetja ndermjet pjestimit te x dhe i eshte 0 atehere ai numer nuk eeshte prime
                 //nese x plotpjestohet me i atehere ai numer nuk eshte prime
                 if (x % i == 0) prime = 0;
-                switch (prime) { //switch kontrollo variablen prime
-                    case 1: //nese mbetja 1 atehere ai numer eshte prime
-                        System.out.println(x + " is prime number!");
-                        break;
-                    case 0://nese mbetja 0 atehere ai numer nuk eshte prime
-                        System.out.println(x + " is not prime number");
-                        break;
-                }
             }
+
+            switch (prime) { //switch kontrollo variablen prime
+                case 1: //nese mbetja 1 atehere ai numer eshte prime
+                    System.out.println(x + " is prime number!");
+                    break;
+                case 0://nese mbetja 0 atehere ai numer nuk eshte prime
+                    System.out.println(x + " is not prime number");
+                    break;
+            }
+
         }
     }
 }
