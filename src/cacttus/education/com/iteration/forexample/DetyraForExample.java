@@ -7,7 +7,8 @@ public class DetyraForExample {
     public static void main(String[] args) {
         //numratCift();
         //numratCiftVA();
-        detyra3Profa();
+        //detyra3Profa();
+        tabelaShumezimitMXH();
     }
 
     public static void numratCift() {
@@ -84,5 +85,17 @@ public class DetyraForExample {
         //1 dhe me u rrit per 2  qe me pas sekuence 1,3,5,7...
         //2 dhe me u rrite per 2 qe me pas sekuence 2,4,6,8...
     }
+
+    public static void tabelaShumezimitMXH() {
+        Scanner reader = new Scanner(System.in);
+        System.out.println("Shkruaj nje numer per te llogaritur: ");
+        int i = reader.nextInt();
+        for (int r = 1; r <= 10; r++) {
+            System.out.println(r + " * " + i + " = " + (r * i) + "\t");
+        }
+        System.out.println("");
+    }
+
+    // me shtyp tabelen e shumezimit per krejt numrat prej 1 deri ne 10
 }
 
