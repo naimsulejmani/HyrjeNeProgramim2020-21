@@ -11,7 +11,7 @@ public class DetyreShtepie {
 
     public static void main(String[] args) {
         //mesazhi_exit_RS();
-       // mesazhi_exit_EH();
+        // mesazhi_exit_EH();
         mesazhi_exit_RB();
     }
 
@@ -31,7 +31,7 @@ public class DetyreShtepie {
     private static void mesazhi_exit_EH() {
         System.out.println("Shkruaj nje tekst (\"exit\" per ta ndalur) : ");
         String teksti = reader.nextLine();
-        while(!teksti.equalsIgnoreCase("exit")) { // !-negacion e ndryshon pyetjen Nuk
+        while (!teksti.equalsIgnoreCase("exit")) { // !-negacion e ndryshon pyetjen Nuk
             System.out.println(teksti);
             System.out.println("Shkruaj nje tekst (\"exit\" per ta ndalur) : ");
             teksti = reader.nextLine();
@@ -39,7 +39,6 @@ public class DetyreShtepie {
             //teksti = teksti.toLowerCase();  //-> e kjo po e ndryshjon
         }
     }
-
 
     private static void mesazhi_exit_RS() {
         System.out.println("Type a string ('exit' to quit): ");
@@ -57,10 +56,8 @@ public class DetyreShtepie {
 
 
     public static void formulaPordhimi() {
-
         System.out.println("Shkruaj numrin n = ");
         int n = reader.nextInt();
-
         int i = 1;
         int prod = 1;
         while (i < n) {
@@ -68,8 +65,7 @@ public class DetyreShtepie {
                 prod *= (i - 2);
             i++;
         }
-
-        System.out.println("Prodhimi eshte: "+prod);
+        System.out.println("Prodhimi eshte: " + prod);
     }
 
     public static void formulaShuma() {
@@ -92,20 +88,15 @@ public class DetyreShtepie {
     public static void mbledhjaNumraveTekNga1DeriNeN() {
         System.out.println("Shkruaj numrin N: ");
         int n = reader.nextInt();
-
         int i = 1; // per cift duhet te jete ose 0 ose 2
         int sum = 0;
-
-
         while (i < n) {
             sum += i; // shumes shtoja vleren e numratorit
             i += 2; // qe me shku sekuenca 1, 3, 5 ,...99
         }
-
         System.out.println("Shuma e numrave tek nga 1 deri ne " + n + " eshte: " + sum);
         System.out.printf("Shuma e numrave tek nga 1 deri ne %d eshte: %d", n, sum);
     }
-
 
 
 }
