@@ -88,8 +88,8 @@ public class Detyra_Slide_1 {
     }
 
     public static void shkronjatEVogla_GJB() {
-        char shkronja = 'a'; //'a' ose 97
-        while (shkronja <= 'z') { //ose 122
+        char shkronja = 'a'; //'a' ose 97 'A'
+        while (shkronja <= 'z') { //ose 122, 'Z'
             System.out.println(shkronja);
             shkronja++;
         }
@@ -103,7 +103,7 @@ public class Detyra_Slide_1 {
         int count = 1;
         while (count <= numri) {
             System.out.printf("%d %s", count,
-                    count % 3 != 0 ? "," : "\n");
+                    count % 3 != 0 ? "," : "\n");  // "\n new line
 
             //if (count % 3 == 0) System.out.println();
 
