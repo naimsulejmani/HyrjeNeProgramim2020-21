@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class MultidimensionalArray {
     public static void main(String[] args) {
-        //rsSlideMatrix();
-        //slide1detyra();
+        rsSlideMatrix();
+        slide1detyra();
         zbritjaMatrices();
     }
 
@@ -25,7 +25,7 @@ public class MultidimensionalArray {
     public static void slide1detyra() {
         Scanner reader = new Scanner(System.in);
         int[][] matrix = new int[2][2]; // deklarimi i matrices array2d 2x2
-
+        //mbush matricen me vlera
         for (int rowIndex = 0; rowIndex < matrix.length; rowIndex++) {
             for (int colIndex = 0; colIndex < matrix[rowIndex].length; colIndex++) {
                 System.out.printf("Shkruaj vleren per Matrix[%d,%d]=", rowIndex + 1, colIndex + 1);
@@ -44,6 +44,13 @@ public class MultidimensionalArray {
     //&nbsp; <p>&nbsp;&nbsp;&nbsp;&nbsp;NAIM
     private static void zbritjaMatrices() {
         Scanner reader = new Scanner(System.in);
+
+        reader.nextInt();
+
+
+        System.out.println();
+
+
         int[][] a = new int[2][2];
         for (int rowIndex = 0; rowIndex < a.length; rowIndex++) {
             for (int columnIndex = 0; columnIndex < a[rowIndex].length; columnIndex++) {
