@@ -3,8 +3,8 @@ package cacttus.education.com.arrays;
 public class CardDeck {
 
     public static void main(String[] args) {
-        //slideExample();
-        viktorCardDeck();
+        slideExample();
+        //viktorCardDeck();
     }
 
     public static void slideExample() {
