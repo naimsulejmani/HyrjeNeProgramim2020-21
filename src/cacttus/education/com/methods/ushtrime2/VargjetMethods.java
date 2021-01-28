@@ -47,4 +47,15 @@ public class VargjetMethods {
         }
         System.out.println();
     }
+
+    public static void endritveselid4() {
+        double[] reciprocals = new double[10];
+
+        for (int i = 1; i < reciprocals.length; i++){
+            reciprocals[i] = 1.0 / i;
+        }
+        for (int i = 0; i < reciprocals.length; i++){
+            System.out.println(reciprocals[i]);
+        }
+    }
 }
