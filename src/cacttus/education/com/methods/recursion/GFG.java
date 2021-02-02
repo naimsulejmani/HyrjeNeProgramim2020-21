@@ -13,6 +13,7 @@ public class GFG {
     }
 
     public static void main(String[] args) {
+        int[][] a = {{1, 2}, {3, 4}};
         int test = 3;
         printFun(test);
         System.out.println();
@@ -23,7 +24,7 @@ public class GFG {
         collatz(100);
 
         System.out.println("\n\n\n");
-        print(new int[] {100,890,123,5243,31});
+        print(new int[]{100, 890, 123, 5243, 31});
     }
 
     //gjini
@@ -48,7 +49,8 @@ public class GFG {
         if (N % 2 == 1) collatz(N * 3 + 1);
         else collatz(N / 2);
     }
-//viktori
+
+    //viktori
     public static void print(int[] arr) {
         print(arr, arr.length);
     }
@@ -58,15 +60,15 @@ public class GFG {
             return;
 
         print(arr, n - 1);
-        System.out.printf("%10d",arr[arr.length - n]);
+        System.out.printf("%10d", arr[arr.length - n]);
     }
 
 
     //te shkruhet metoda me recursion i cili ben printimin e elementeve ne varg
     // array, index
 //resul
-    static void printArray(int []data, int num){
-        if(num != -1){
+    static void printArray(int[] data, int num) {
+        if (num != -1) {
             printArray(data, num - 1);
             System.out.println(data[num]);
         }
